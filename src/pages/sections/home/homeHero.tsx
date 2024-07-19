@@ -12,6 +12,7 @@ function HomeHero() {
             className="w-[25%] h-[25%]"
           />
         </div>
+        {/* <h1 className="text-7xl font-bold text-center text-stroke text-transparent" style={{WebkitTextStroke: '1px #ffffff'}}>OZP STUDIOS</h1> */}
       </section>
     </>
   );

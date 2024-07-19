@@ -1,11 +1,12 @@
 import HomeHero from "./sections/home/homeHero";
+import AllProjects from "./AllProjects";
 
 function Home() {
   return (
     <>
       <main id="main-container" className="bg-ozp-background min-h-screen min-w-screen max-w-screen">
         <HomeHero />
-        <div className="min-h-screen" data-scroll-section>t</div>
+        <AllProjects />
       </main>
     </>
   );

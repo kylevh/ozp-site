@@ -7,6 +7,7 @@ import About from "./pages/About";
 import Contact from "./pages/Contact";
 import AllProjects from "./pages/AllProjects";
 import Navbar from "./components/Navbar";
+import Loader from "./components/Loader";
 
 function App() {
   const location = useLocation();
@@ -21,6 +22,7 @@ function App() {
   return (
     <>
       <Navbar />
+      {/* <Loader /> */}
       <AnimatePresence mode="wait">
         <Routes location={location} key={location.pathname}>
           <Route path="/" element={<Home />} />
