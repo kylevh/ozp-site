@@ -64,7 +64,7 @@ export default function ProjectDetail({ projectId }: { projectId: number }) {
                   }] pl-10 min-h-[25rem] flex items-center justify-center`}
                 >
                   <img
-                    src={`/img/${project.name.toLowerCase()}.png`}
+                    src={`${project.projectImg}`}
                     alt={project.name}
                     className={`w-[${
                       project.description ? "100%" : "45%"

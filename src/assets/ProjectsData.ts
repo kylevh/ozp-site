@@ -45,6 +45,7 @@ const projects = [
     tags: ["Web", "Design", "Agency"],
     link: "/project/3",
     projectImg: "/img/kualnotes.png",
+    projectLogoImg: "/img/kualnotes_logo.png",
     numberSrc: "/img/numbers/3.svg",
     hoverSrc: "/img/numbers/filled/3.svg",
   },

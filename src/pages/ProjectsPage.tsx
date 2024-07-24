@@ -80,7 +80,8 @@ function ProjectsPage() {
                     }] pl-10 min-h-[25rem] flex items-center justify-center`}
                   >
                     <img
-                      src={`/img/${hoveredProject.name.toLowerCase()}.png`}
+                      src={`${hoveredProject.projectImg}`}
+                      // src={`${project.projectImg}`}
                       alt={hoveredProject.name}
                       className={`w-[${
                         hoveredProject.description ? "100%" : "45%"

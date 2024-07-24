@@ -1,6 +1,10 @@
 import { Link, useParams } from "react-router-dom";
 import { projects } from "../assets/ProjectsData"; // Import the projects array
 import type { Project } from "../assets/ProjectsData";
+import MoreDesignPage from "../components/project/moreDesignPage";
+import PokeDokeyPage from "../components/project/pokeDokeyPage";
+import OZPlayPage from "../components/project/OZPlayPage";
+import KualNotesPage from "../components/project/kualNotesPage";
 import RKKPage from "../components/project/RKKPage";
 import TamagrowPage from "../components/project/tamagrowPage";
 
@@ -8,6 +12,10 @@ import TamagrowPage from "../components/project/tamagrowPage";
 const projectComponents = {
   "1": TamagrowPage,
   "2": RKKPage,
+  "3": KualNotesPage,
+  "4": OZPlayPage,
+  "5": PokeDokeyPage,
+  "6": MoreDesignPage,
 };
 
 // DO NOT TOUCH BELOW

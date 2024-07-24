@@ -34,7 +34,7 @@ function Home() {
     <>
       <main
         id="main-container"
-        className="bg-ozp-background min-h-screen min-w-screen max-w-screen"
+        className="bg-ozp-background min-h-screen max-w-screen min-w-screen w-screen"
       >
         <HomeHero />
         <ProjectsPage />

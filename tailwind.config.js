@@ -23,6 +23,8 @@ module.exports = {
           secondary: "#111111",
           tertiary: "#222222",
           background: "#0E0E0E",
+          grey: "#B1B1B1",
+          purple: "#C79BFF",
         },
       },
       fontFamily: {

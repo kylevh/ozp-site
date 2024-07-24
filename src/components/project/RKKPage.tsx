@@ -19,9 +19,17 @@ function RKKPage() {
           className="w-full min-h-[50rem] justify-start items-start flex flex-col"
         >
           {/* CUSTOM STUFF GOES BELOW HERE */}
-        <h2 className="text-2xl font-bold font-ozpPrimary text-white">
-          Project RKK
-        </h2>
+        <div className="grid grid-cols-2 m-[10rem] mr-[16rem] h-80">
+          <h2 className="text-2xl font-ozpPrimary text-ozp-grey leading-normal">
+            RKK Solutions is our in-house <span className="text-ozp-purple">digital transformation</span> team, committed to developing tech solutions 
+            for local businesses in the Seattle area. Our expertise encompasses a wide range of services 
+            designed to <span className="text-ozp-purple">elevate</span> your digital presence and streamline operations.
+          </h2>
+        </div>
+
+        <div className="text-ozp-purple flex justify-center items-center w-full">
+          <h1 className="text-white text-6xl">Portfolio:</h1>
+        </div>
       </div>
     </main>
   );
