@@ -4,7 +4,7 @@ import { Project } from "../../../types/project";
 // Copy imports from pages
 
 function MoreDesignPage() {
-  const project = projects[2]; //MAKE SURE THIS ID MATCHES WITH projectsData.ts ID
+  const project = projects[5]; //MAKE SURE THIS ID MATCHES WITH projectsData.ts ID
   
 
   return (

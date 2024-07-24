@@ -27,7 +27,7 @@ function RKKPage() {
           </h2>
         </div>
 
-        <div className="text-ozp-purple flex justify-center items-center w-full">
+        <div className="flex justify-center items-center w-full">
           <h1 className="text-white text-6xl">Portfolio:</h1>
         </div>
       </div>

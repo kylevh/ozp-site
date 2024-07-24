@@ -1,6 +1,7 @@
 import ProjectDetail from "./projectDetail";
 import { projects } from "../../assets/ProjectsData";
 import { Project } from "../../../types/project";
+
 // Copy imports from pages
 
 function KualNotesPage() {
@@ -43,7 +44,7 @@ function KualNotesPage() {
           <img  
             src="\img\kualnotes2.png"
             alt="Kual Note Screenshot"
-            className="col-start-2 object-fit:cover px-80 max-w-[64rem]"
+            className="col-start-2 px-80 max-w-[64rem]"
             />  
           </div>
         </div>

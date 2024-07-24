@@ -16,6 +16,10 @@ function ProjectsPage() {
     setLastHoveredProject(project);
   };
 
+  const handleMouseLeave = () => {
+    setHoveredProject(null);
+  };
+
   return (
     <main
       id="projects"
@@ -111,6 +115,7 @@ function ProjectsPage() {
                 lastHoveredProject?.id === project.id ? "scale-110" : ""
               }`}
               onMouseEnter={() => handleMouseEnter(project)}
+              onMouseLeave={handleMouseLeave}
             >
               <div className="relative h-20 w-20 lg:h-28 lg:w-28 duration-150">
                 <img
