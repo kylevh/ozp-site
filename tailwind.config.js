@@ -20,10 +20,10 @@ module.exports = {
       colors: {
         ozp: {
           primary: "#283618",
-          secondary: "#111111",
+          secondary: "#7E7E7E",
           tertiary: "#222222",
           background: "#0E0E0E",
-          grey: "#B1B1B1",
+          grey: "#7E7E7E",
           purple: "#C79BFF",
         },
       },

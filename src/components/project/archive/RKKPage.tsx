@@ -1,5 +1,5 @@
 import ProjectDetail from "./projectDetail";
-import { projects } from "../../assets/ProjectsData";
+import { projects } from "../../../assets/ProjectsData";
 import { Project } from "../../../types/project";
 import {
   Carousel,
@@ -26,7 +26,7 @@ function RKKPage() {
           id="CUSTOM-CONTENT"
           className="w-full min-h-[50rem] justify-start items-start flex flex-col"
         >
-          {/* CUSTOM STUFF GOES BELOW HERE */}
+          CUSTOM STUFF GOES BELOW HERE
         <div className="grid grid-cols-2 m-[10rem] mr-[16rem]">
           <h2 className="text-2xl font-ozpPrimary text-ozp-grey leading-normal">
             RKK Solutions is our in-house <span className="text-ozp-purple">digital transformation</span> team, committed to developing tech solutions 

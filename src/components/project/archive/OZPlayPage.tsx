@@ -1,5 +1,5 @@
 import ProjectDetail from "./projectDetail";
-import { projects } from "../../assets/ProjectsData";
+import { projects } from "../../../assets/ProjectsData";
 import { Project } from "../../../types/project";
 // Copy imports from pages
 

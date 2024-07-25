@@ -1,27 +1,15 @@
-export interface Project {
-    id: number;
-    name: string;
-    edgyName: string;
-    description: string | null;
-    tags: string[];
-    link: string;
-    numberSrc: string;
-    hoverSrc: string;
-    projectImg: string;
-  }
+
 
 const projects = [
   {
     id: 1,
     name: "Tamagrow",
     edgyName: "/tamagrow.io",
-    description: `Tamagrow is a web app that allows you to grow your own virtual
-      plant. It's a fun and easy way to learn about plant care and to
-      have a little green friend to take care of.`,
+    description: `Tamagrow is a **web app** that allows you to grow your own virtual plant. It's a fun and easy way to learn about plant care and to have a little green friend to take care of. \n Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam interdum turpis sed neque venenatis, accumsan accumsan sem placerat. Mauris a consectetur augue. Pell`,
     tags: ["Game", "Desktop", "Design"],
     link: "/project/1",
-    projectImg: "/img/tamagrow.png",
-    projectLogoImg: "/img/tamagrow_logo.png",
+    coverImg: "/img/tamagrow.png",
+    logoImg: "/img/tamagrow_logo.png",
     numberSrc: "/img/numbers/1.svg",
     hoverSrc: "/img/numbers/filled/1.svg",
 
@@ -30,10 +18,11 @@ const projects = [
     id: 2,
     name: "RKK",
     edgyName: "/rkk",
-    description: null,
+    description: "RKK is a **web app** that allows you to grow your own virtual plant. It's a fun and easy way to learn about plant care and to have a little green friend to take care of. \n Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam interdum turpis sed neque venenatis, accumsan accumsan sem placerat. Mauris a consectetur augue. Pell",
     tags: ["Web", "Agency", "Design"],
     link: "/project/2",
-    projectImg: "/img/rkk.png",
+    coverImg: "/img/rkk.png",
+    logoImg: "/img/tamagrow_logo.png",
     numberSrc: "/img/numbers/2.svg",
     hoverSrc: "/img/numbers/filled/2.svg",
   },
@@ -44,8 +33,8 @@ const projects = [
     description: null,
     tags: ["Web", "Design", "Agency"],
     link: "/project/3",
-    projectImg: "/img/kualnotes.png",
-    projectLogoImg: "/img/kualnotes_logo.png",
+    coverImg: "/img/kualnotes.png",
+    logoImg: "/img/kualnotes_logo.png",
     numberSrc: "/img/numbers/3.svg",
     hoverSrc: "/img/numbers/filled/3.svg",
   },
@@ -56,7 +45,8 @@ const projects = [
     description: null,
     tags: ["Web", "Design"],
     link: "/project/4",
-    projectImg: "/img/ozplay.png",
+    coverImg: "/img/ozplay.png",
+    logoImg: "/img/tamagrow_logo.png",
     numberSrc: "/img/numbers/4.svg",
     hoverSrc: "/img/numbers/filled/4.svg",
   },
@@ -67,7 +57,8 @@ const projects = [
     description: null,
     tags: ["Web", "Design"],
     link: "/project/5",
-    projectImg: "/img/pokedokey.png",
+    coverImg: "/img/pokedokey.png",
+    logoImg: "/img/tamagrow_logo.png",
     numberSrc: "/img/numbers/5.svg",
     hoverSrc: "/img/numbers/filled/5.svg",
   },
@@ -78,7 +69,8 @@ const projects = [
     description: "design projects we've done",
     tags: ["Design"],
     link: "/project/6",
-    projectImg: "/img/more.png",
+    coverImg: "/img/more.png",
+    logoImg: "/img/tamagrow_logo.png",
     numberSrc: "/img/numbers/6.svg",
     hoverSrc: "/img/numbers/filled/6.svg",
   },

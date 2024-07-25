@@ -1,5 +1,5 @@
-import { Project } from "../../assets/ProjectsData";
-import { projects } from "../../assets/ProjectsData";
+import { Project } from "../../../assets/ProjectsData";
+import { projects } from "../../../assets/ProjectsData";
 import { useEffect } from "react";
 import ProjectDetail from "./projectDetail";
 

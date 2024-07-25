@@ -1,5 +1,5 @@
 import HomeHero from "../components/home/homeHero";
-import ProjectsPage from "./ProjectsPage";
+import Projects from "./Projects";
 import { useEffect } from "react";
 
 function Home() {
@@ -37,7 +37,7 @@ function Home() {
         className="bg-ozp-background min-h-screen max-w-screen min-w-screen w-screen"
       >
         <HomeHero />
-        <ProjectsPage />
+        <Projects />
       </main>
     </>
   );
