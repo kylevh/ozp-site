@@ -6,9 +6,9 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Project from "./pages/Project";
-import Navbar from "./components/Navbar";
+import Navbar from "./components/kylecustom/Navbar";
 
-import Loader from "./components/Loader";
+import Loader from "./components/kylecustom/Loader";
 import { GlobalStateProvider } from "./components/context/GlobalStateContext";
 
 function App() {

@@ -1,6 +1,6 @@
 import { Link, useLocation } from "react-router-dom";
 import Hamburger from "./Hamburger";
-import { useGlobalState } from "./context/GlobalStateContext";
+import { useGlobalState } from "../context/GlobalStateContext";
 
 function Navbar() {
   const { logoVisible } = useGlobalState();
