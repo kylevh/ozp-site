@@ -9,7 +9,6 @@ import TamagrowSubContent from "@/components/project/tamagrow/tamagrowSubContent
 import RKKMainContent from "@/components/project/rkk/rkkMainComponent";
 import RKKSubContent from "@/components/project/rkk/rkkSubComponent";
 
-
 // Use the defined type for projectComponents
 const projectComponents: ProjectComponents = {
   "1": {
@@ -72,6 +71,8 @@ function Project() {
           <div className="col-span-3 col-start-1 md:col-span-6 md:col-start-1 md:row-start-2 flex flex-col justify-start">
             {/* MAIN COMPONENT (Cover image/carousel/whatever) */}
             {MainContent && <MainContent />}
+
+            {/* Logo (desktop view) */}
             <div className="hidden md:flex w-full mt-14">
               <img
                 src={project.logoImg}
@@ -81,7 +82,7 @@ function Project() {
             </div>
           </div>
 
-          {/* Logo */}
+          {/* Logo (mobile view) */}
           <div className="md:hidden flex col-span-3 mt-5">
             <img src={project.logoImg} alt="" />
           </div>
@@ -89,7 +90,9 @@ function Project() {
           {/* Project Description + Sub Content */}
           <div className="col-span-3 md:col-span-5 md:col-start-8 flex flex-col flex-grow justify-center items-center md:row-span-1 md:row-start-2">
             <h3 className="text-md font-normal text-left text-ozp-grey font-ozpPrimary whitespace-pre-line">
-              {project.description ? convertTextStyling(project.description) : ""}
+              {project.description
+                ? convertTextStyling(project.description)
+                : ""}
             </h3>
 
             <div className="w-full flex flex-col md:pt-10 mt-10 md:border-t-2 md:pb-0 pb-10 md:border-ozp-grey">

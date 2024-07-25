@@ -16,7 +16,7 @@ export default function RKKMainComponent() {
                     className="relative -z-50"
                   />
                 </div>
-                <div className="items-center justify-center flex mb-[4rem]">
+                <div className="items-center justify-center flex ">
                   <h2 className="text-sm font-ozpPrimary text-ozp-grey  text-center">
                     Dep Homes is a ncoksmalclahiwefvnawoilfja kfahbefehlvan
                     wievlfjnFWIKBUEFHJNHLNjnweuhbj
@@ -31,7 +31,7 @@ export default function RKKMainComponent() {
                     className="relative -z-50"
                   />
                 </div>
-                <div className="items-center justify-center flex mb-[4rem]">
+                <div className="items-center justify-center flex ">
                   <h2 className="text-sm font-ozpPrimary text-ozp-grey leading-normal w-3/4 text-center">
                     Dep Homes is a ncoksmalclahiwefvnawoilfja kfahbefehlvan
                     wievlfjnFWIKBUEFHJNHLNjnweuhbj
@@ -46,7 +46,7 @@ export default function RKKMainComponent() {
                     className="relative -z-50"
                   />
                 </div>
-                <div className="items-center justify-center flex mb-[4rem]">
+                <div className="items-center justify-center flex ">
                   <h2 className="text-sm font-ozpPrimary text-ozp-grey leading-normal w-3/4 text-center">
                     Dep Homes is a ncoksmalclahiwefvnawoilfja kfahbefehlvan
                     wievlfjnFWIKBUEFHJNHLNjnweuhbj
