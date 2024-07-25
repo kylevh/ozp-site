@@ -46,6 +46,9 @@ module.exports = {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
       },
+      boxShadow: {
+        'inner-lg': 'inset 0 8px 8px rgba(0, 0, 0, 0.2), inset 0 -5px 2px rgba(234, 234, 234, 0.1)',
+      },
     },
   },
   plugins: [require("tailwindcss-animate")],
