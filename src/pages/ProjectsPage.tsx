@@ -2,18 +2,15 @@ import { Link } from "react-router-dom";
 import { useState } from "react";
 import { projects } from "../assets/ProjectsData"; // Import the projects array
 import type { Project } from "../assets/ProjectsData";
+import { motion } from "framer-motion";
 
 // DO NOT TOUCH BELOW
 
 function ProjectsPage() {
   const [hoveredProject, setHoveredProject] = useState<Project | null>(null);
-  const [lastHoveredProject, setLastHoveredProject] = useState<Project | null>(
-    null
-  );
 
   const handleMouseEnter = (project: Project) => {
     setHoveredProject(project);
-    setLastHoveredProject(project);
   };
 
   const handleMouseLeave = () => {
@@ -24,6 +21,7 @@ function ProjectsPage() {
     <main
       id="projects"
       className="bg-ozp-background min-h-screen min-w-screen max-w-screen flex flex-col"
+      data-scroll-section
     >
       {/* Page Title */}
       <div className="h-32 flex flex-col justify-end items-start p-4">
@@ -106,28 +104,28 @@ function ProjectsPage() {
         </div>
 
         {/* Numbers */}
-        <div className="grid grid-cols-2 w-screen md:grid-cols-6 gap-4 p-4 flex-grow md:items-end md:pb-20">
+        <motion.div className="grid grid-cols-2 w-screen md:grid-cols-6 gap-4 p-4 flex-grow md:items-end md:pb-20">
           {projects.map((project, index) => (
             <Link
               to={project.link}
               key={index}
-              className={`flex flex-col items-center justify-center ${
-                lastHoveredProject?.id === project.id ? "scale-110" : ""
+              className={`flex flex-col items-center justify-center duration-150 ${
+                hoveredProject?.id === project.id ? "scale-[120%]" : ""
               }`}
               onMouseEnter={() => handleMouseEnter(project)}
-              onMouseLeave={handleMouseLeave}
+              onMouseLeave={() => setHoveredProject(null)}
             >
               <div className="relative h-20 w-20 lg:h-28 lg:w-28 duration-150">
                 <img
                   className={`absolute inset-0 h-full w-full transition-opacity duration-150 ${
-                    lastHoveredProject?.id === project.id ? "opacity-0" : ""
+                    hoveredProject?.id === project.id ? "opacity-0" : ""
                   }`}
                   src={project.numberSrc}
                   alt={project.name}
                 />
                 <img
                   className={`absolute inset-0 h-full w-full transition-opacity duration-150 max-h-[10rem] ${
-                    lastHoveredProject?.id === project.id
+                    hoveredProject?.id === project.id
                       ? "opacity-100"
                       : "opacity-0"
                   }`}
@@ -140,7 +138,7 @@ function ProjectsPage() {
               </h3>
             </Link>
           ))}
-        </div>
+        </motion.div>
       </div>
     </main>
   );
