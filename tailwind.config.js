@@ -25,6 +25,7 @@ module.exports = {
           background: "#0E0E0E",
           grey: "#7E7E7E",
           purple: "#C79BFF",
+          royal: "#2A0939",
         },
       },
       fontFamily: {

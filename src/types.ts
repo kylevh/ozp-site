@@ -9,6 +9,7 @@ export interface Project {
   logoImg?: string; // Make this optional
   numberSrc: string;
   hoverSrc: string;
+  gradientColor?: string; // Make this optional
 }
 
 // Define the type for projectComponents

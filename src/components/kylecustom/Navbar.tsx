@@ -1,6 +1,8 @@
 import { Link, useLocation } from "react-router-dom";
 import Hamburger from "./Hamburger";
+import { projects } from "../../assets/ProjectsData";
 import { useGlobalState } from "../context/GlobalStateContext";
+
 
 function Navbar() {
   const { logoVisible } = useGlobalState();
@@ -15,9 +17,14 @@ function Navbar() {
     ? "justify-start pl-6"
     : "justify-center pl-20 lg:pl-24";
 
+  const project = projects[0];
+  // const { id } = useParams<{ id: string }>();
+  // const projectId = id ?? "0"; // Ensure id is defined
+  // const project = projects.find((p) => p.id === parseInt(projectId));
+
   return (
     <>
-      <nav className="hidden lg:flex fixed min-w-screen w-screen z-20 justify-between items-center">
+      <nav className={`hidden lg:flex fixed min-w-screen w-screen z-20 justify-between items-center ${project.gradientColor}`}>
         <Link to="/" className={`flex-1 flex ${navbarLeft}`}>
           {logoVisible && (
             <img src="/img/ozp_logo.svg" alt="ozp logo" className="w-16 h-16" />

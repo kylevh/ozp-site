@@ -9,8 +9,10 @@ export default function TamagrowMainContent() {
         <img
           src={projects[0].coverImg}
           alt="Project Cover Image"
-          className="rounded-lg md:w-[85%]"
+          className="rounded-lg md:w-[100%]"
         />
+      </div>
+      <div className="pt-[10%]">
       </div>
     </>
   );

@@ -4,10 +4,22 @@ import type { Project } from "@/types";
 import { convertTextStyling } from "../lib/convertTextStyling";
 import type { ProjectComponents } from "../types";
 
+
 import TamagrowMainContent from "@/components/project/tamagrow/tamagrowMainContent";
 import TamagrowSubContent from "@/components/project/tamagrow/tamagrowSubContent";
 import RKKMainContent from "@/components/project/rkk/rkkMainComponent";
 import RKKSubContent from "@/components/project/rkk/rkkSubComponent";
+import KualNotesMainContent from "@/components/project/kualnotes/kualnotesMainContent";
+import KualNotesSubContent from "@/components/project/kualnotes/kualnotesSubContent";
+import OZPlayMainContent from "@/components/project/ozplay/ozplayMainContent";
+import OZPlaySubContent from "@/components/project/ozplay/ozplaySubContent";
+import PokeDokeyMainContent from "@/components/project/pokedokey/pokedokeyMainContent";
+import PokeDokeySubContent from "@/components/project/pokedokey/pokedokeySubContent";
+import MoreMainContent from "@/components/project/more/moreMainContent";
+import MoreSubContent from "@/components/project/more/moreSubContent";
+
+
+
 
 // Use the defined type for projectComponents
 const projectComponents: ProjectComponents = {
@@ -19,6 +31,22 @@ const projectComponents: ProjectComponents = {
     MainContent: RKKMainContent,
     SubContent: RKKSubContent,
   },
+  "3": {
+    MainContent: KualNotesMainContent,
+    SubContent: KualNotesSubContent
+  },
+  "4": {
+    MainContent: PokeDokeyMainContent,
+    SubContent: PokeDokeySubContent
+  },
+  "5": {
+    MainContent: OZPlayMainContent,
+    SubContent: OZPlaySubContent
+  },
+  "6": {
+    MainContent: MoreMainContent,
+    SubContent: MoreSubContent
+  }
   // Add other projects here
 };
 
@@ -41,8 +69,9 @@ function Project() {
       <main className="w-screen min-h-screen bg-ozp-background flex justify-center">
         <div
           id="grid-container"
-          className="w-full h-max max-w-[120rem] grid grid-cols-3 md:grid-cols-12 pt-32 md:pt-22 px-6 md:px-20 gap-y-10 auto-rows-min justify-start"
+          className="w-full relative h-max max-w-[120rem] grid grid-cols-3 md:grid-cols-12 pt-32 md:pt-22 px-6 md:px-20 gap-y-10 auto-rows-min justify-start"
         >
+
           {/* Project Title */}
           <div
             id="ProjectTitle"
@@ -60,7 +89,7 @@ function Project() {
 
             {/* Desktop title */}
 
-            <div className="hidden md:flex col-span-6 border-b-2 border-ozp-grey ">
+            <div className="hidden md:flex col-span-4 border-b-2 border-ozp-grey ">
               <h3></h3>
             </div>
             <h1 className="hidden md:flex col-span-6 col-start-8 font-normal text-center text-white font-ozpPrimary pb-1 items-end md:text-2xl lg:text-5xl whitespace-nowrap">
@@ -89,7 +118,7 @@ function Project() {
 
           {/* Project Description + Sub Content */}
           <div className="col-span-3 md:col-span-5 md:col-start-8 flex flex-col flex-grow justify-center items-center md:row-span-1 md:row-start-2">
-            <h3 className="text-md font-normal text-left text-ozp-grey font-ozpPrimary whitespace-pre-line">
+            <h3 className="text-xl leading-normal font-normal text-left text-ozp-grey font-ozpPrimary whitespace-pre-line">
               {project.description
                 ? convertTextStyling(project.description)
                 : ""}

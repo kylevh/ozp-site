@@ -1,11 +1,11 @@
 export default function TamagrowSubContent() {
   return (
     <>
-      <div className="w-full flex flex-col items-start md:items-center">
-        <h3 className="text-md font-normal text-left text-white font-ozpPrimary pb-5">
+      <div className="">
+        <h3 className="text-xl font-normal text-left text-white font-ozpPrimary pb-5">
           .CONCEPT_TRAILER
         </h3>
-        <div className="flex justify-center items-center pt-0 mt-0 w-full md:w-3/4">
+        <div className="flex justify-center items-center pt-0 mt-0 w-full md:w-3/4w-full flex flex-col items-start md:items-center lg:items-left w-[80%]">
           <div
             className="relative w-full"
             style={{ paddingBottom: "56.25%" /* 16:9 aspect ratio */ }}
