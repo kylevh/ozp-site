@@ -69,7 +69,7 @@ const projects = [
     id: 6,
     name: "More",
     edgyName: "/MORE",
-    description: "Here's a gallery of other projects we've done:",
+    description: "Here's a gallery of other projects we've done",
     tags: ["Design"],
     link: "/project/6",
     coverImg: "/img/more.png",
