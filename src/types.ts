@@ -6,7 +6,7 @@ export interface Project {
   tags: string[];
   link: string;
   coverImg: string;
-  logoImg?: string; // Make this optional
+  logoImg?: string | null; // Make this optional
   numberSrc: string;
   hoverSrc: string;
   gradientColor?: string; // Make this optional

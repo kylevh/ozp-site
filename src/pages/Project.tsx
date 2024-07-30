@@ -104,7 +104,7 @@ function Project() {
             {/* Logo (desktop view) */}
             <div className="hidden md:flex w-full mt-14">
               <img
-                src={project.logoImg}
+                src={project.logoImg || ""}
                 alt=""
                 className="w-full max-w-[50rem]"
               />
@@ -113,7 +113,7 @@ function Project() {
 
           {/* Logo (mobile view) */}
           <div className="md:hidden flex col-span-3 mt-5">
-            <img src={project.logoImg} alt="" />
+            <img src={project.logoImg || ""} alt="" />
           </div>
 
           {/* Project Description + Sub Content */}
