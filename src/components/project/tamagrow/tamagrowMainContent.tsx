@@ -12,7 +12,7 @@ export default function TamagrowMainContent() {
           className="rounded-lg md:w-[100%]"
         />
       </div>
-      <div className="pt-[10%]">
+      <div className="pt-[5%]">
       </div>
     </>
   );

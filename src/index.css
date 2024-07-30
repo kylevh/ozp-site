@@ -17,6 +17,8 @@ h1 {
     align-items: center; */
     /* min-height: 100vh; */
     flex-direction: column;
+    -webkit-mask-image: linear-gradient(90deg, transparent, #ffffff 20%, #ffffff 80%, transparent);
+
 
 }
 
@@ -25,7 +27,6 @@ h1 {
     display: flex;
     width: 850px;
     overflow: hidden;
-    -webkit-mask-image: linear-gradient(90deg, transparent, #ffffff 20%, #ffffff 80%, transparent);
 }
 
 .scroll div {
@@ -111,5 +112,6 @@ h1 {
     max-width: 30rem;
     max-height: 17rem;
     scale: .9;
+    border-radius: 2%;
     
 }

@@ -14,23 +14,23 @@ export default function MoreMainContent() {
 
   
   return(
-    <div className="relative">
-      <div className="absolute h-full justify-center items-center flex inset-[0%] m-auto w-[80%] h-24 z-[100]">
+    <div className="relative w-[]" >
+      <div className="absolute pointer-events-none z-10 h-full justify-center items-center flex inset-[0%] m-auto w-[80%] h-24">
 
-        <img
-        alt="Item hover"
+        {hoveredItem && <img
         src={hoveredItem ? `/img/more/${hoveredItem}.png` : ''}
-        />
+        className="rounded-[4%]"
+        />}
       </div>
 
 
       {/* carousels */}
-      <div className="z-[20]">
+      <div className="z-[20] group">
 
-          <h3 className="text-xl font-normal text-white font-ozpPrimary pb-5">.GAMES</h3>
-          <div className="morebody overflow-hidden" >
+          <h3 className="text-xl font-normal text-white font-ozpPrimary">.GAMES</h3>
+          <div className="morebody overflow-hidden " >
             <div className="scroll imgBox">
-              <div>
+              <div className="group-hover:blur">
                 <img src="\img\more\raccoon.png" className="scrollImg" onMouseEnter={() => handleMouseEnter('raccoon')} onMouseLeave={handleMouseLeave}  />
                 <img src="\img\more\corpsebound.png" className="scrollImg" onMouseEnter={() => handleMouseEnter('corpsebound')} onMouseLeave={handleMouseLeave}/>
                 <img src="\img\more\cave.png" className="scrollImg" onMouseEnter={() => handleMouseEnter('cave')} onMouseLeave={handleMouseLeave}/>
@@ -38,7 +38,7 @@ export default function MoreMainContent() {
                 <img src="\img\more\corpsebound.png" className="scrollImg" onMouseEnter={() => handleMouseEnter('corpsebound')} onMouseLeave={handleMouseLeave}/>
                 <img src="\img\more\cave.png" className="scrollImg" onMouseEnter={() => handleMouseEnter('cave')} onMouseLeave={handleMouseLeave}/>
               </div>
-              <div>
+              <div className="group-hover:blur">
               <img src="\img\more\raccoon.png" className="scrollImg" onMouseEnter={() => handleMouseEnter('raccoon')} onMouseLeave={handleMouseLeave}/>
                 <img src="\img\more\corpsebound.png" className="scrollImg" onMouseEnter={() => handleMouseEnter('corpsebound')} onMouseLeave={handleMouseLeave}/>
                 <img src="\img\more\cave.png" className="scrollImg" onMouseEnter={() => handleMouseEnter('cave')} onMouseLeave={handleMouseLeave}/>
@@ -49,28 +49,28 @@ export default function MoreMainContent() {
             </div>
           </div>
 
-          <h3 className="text-xl font-normal text-white font-ozpPrimary pb-5">.CONSULTING</h3>
-          <div className="morebody overflow-hidden" >
+          <h3 className="text-xl font-normal text-white font-ozpPrimary">.CONSULTING</h3>
+          <div className="morebody overflow-hidden group" >
             <div className="scroll2 imgBox">
-              <div>
-                <img src="\img\more\uwkc.png" className="scrollImg "/>
-                <img src="\img\more\solbere.png" className="scrollImg"/>
-                <img src="\img\more\crowdmed.png" className="scrollImg"/>
-                <img src="\img\more\arena_sports.png" className="scrollImg"/>
-                <img src="\img\more\uwkc.png" className="scrollImg "/>
-                <img src="\img\more\solbere.png" className="scrollImg"/>
-                <img src="\img\more\crowdmed.png" className="scrollImg"/>
-                <img src="\img\more\arena_sports.png" className="scrollImg"/>
+              <div className="group-hover:blur">
+                <img src="\img\more\uwkc.png" className="scrollImg" onMouseEnter={() => handleMouseEnter('uwkc')} onMouseLeave={handleMouseLeave}/>
+                <img src="\img\more\solbere.png" className="scrollImg" onMouseEnter={() => handleMouseEnter('solbere')} onMouseLeave={handleMouseLeave}/>
+                <img src="\img\more\crowdmed.png" className="scrollImg" onMouseEnter={() => handleMouseEnter('crowdmed')} onMouseLeave={handleMouseLeave}/>
+                <img src="\img\more\arena_sports.png" className="scrollImg" onMouseEnter={() => handleMouseEnter('arena_sports')} onMouseLeave={handleMouseLeave}/>
+                <img src="\img\more\uwkc.png" className="scrollImg " onMouseEnter={() => handleMouseEnter('uwkc')} onMouseLeave={handleMouseLeave}/>
+                <img src="\img\more\solbere.png" className="scrollImg" onMouseEnter={() => handleMouseEnter('solbere')} onMouseLeave={handleMouseLeave}/>
+                <img src="\img\more\crowdmed.png" className="scrollImg" onMouseEnter={() => handleMouseEnter('crowdmed')} onMouseLeave={handleMouseLeave}/>
+                <img src="\img\more\arena_sports.png" className="scrollImg" onMouseEnter={() => handleMouseEnter('arena_sports')} onMouseLeave={handleMouseLeave}/>
               </div>
-              <div>
-              <img src="\img\more\uwkc.png" className="scrollImg "/>
-                <img src="\img\more\solbere.png" className="scrollImg"/>
-                <img src="\img\more\crowdmed.png" className="scrollImg"/>
-                <img src="\img\more\arena_sports.png" className="scrollImg"/>
-                <img src="\img\more\uwkc.png" className="scrollImg "/>
-                <img src="\img\more\solbere.png" className="scrollImg"/>
-                <img src="\img\more\crowdmed.png" className="scrollImg"/>
-                <img src="\img\more\arena_sports.png" className="scrollImg"/>
+              <div className="group-hover:blur">
+              <img src="\img\more\uwkc.png" className="scrollImg " onMouseEnter={() => handleMouseEnter('uwkc')} onMouseLeave={handleMouseLeave}/>
+                <img src="\img\more\solbere.png" className="scrollImg" onMouseEnter={() => handleMouseEnter('solbere')} onMouseLeave={handleMouseLeave}/>
+                <img src="\img\more\crowdmed.png" className="scrollImg" onMouseEnter={() => handleMouseEnter('crowdmed')} onMouseLeave={handleMouseLeave}/>
+                <img src="\img\more\arena_sports.png" className="scrollImg" onMouseEnter={() => handleMouseEnter('arena_sports')} onMouseLeave={handleMouseLeave}/>
+                <img src="\img\more\uwkc.png" className="scrollImg " onMouseEnter={() => handleMouseEnter('uwkc')} onMouseLeave={handleMouseLeave}/>
+                <img src="\img\more\solbere.png" className="scrollImg" onMouseEnter={() => handleMouseEnter('solbere')} onMouseLeave={handleMouseLeave}/>
+                <img src="\img\more\crowdmed.png" className="scrollImg" onMouseEnter={() => handleMouseEnter('crowdmed')} onMouseLeave={handleMouseLeave}/>
+                <img src="\img\more\arena_sports.png" className="scrollImg" onMouseEnter={() => handleMouseEnter('arena_sports')} onMouseLeave={handleMouseLeave}/>
               </div>
             </div>
           </div>
