@@ -1,4 +1,3 @@
-import { Project } from "@/types";
 import { projects } from "@/assets/ProjectsData";
 
 export default function TamagrowMainContent() {

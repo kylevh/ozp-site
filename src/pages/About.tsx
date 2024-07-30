@@ -1,12 +1,9 @@
-import { useState } from "react";
-
-
 function About() {
-  const [visibleImage, setVisibleImage] = useState('both'); // 'both', 'fukuda', or 'huynh'
+  // const [visibleImage, setVisibleImage] = useState('both'); // 'both', 'fukuda', or 'huynh'
 
-  const handleClick = (image) => {
-    setVisibleImage(image);
-  };
+  // const handleClick = (image) => {
+  //   setVisibleImage(image);
+  // };
 
   return (
     <>

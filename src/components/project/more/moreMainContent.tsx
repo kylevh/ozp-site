@@ -2,9 +2,9 @@
 import { useState } from "react"
 
 export default function MoreMainContent() {
-  const [hoveredItem, setHoveredItem] = useState<String | null>(null)
+  const [hoveredItem, setHoveredItem] = useState<string | null>(null)
 
-  const handleMouseEnter = (item: String) => {
+  const handleMouseEnter = (item: string) => {
     setHoveredItem(item)
   }
 

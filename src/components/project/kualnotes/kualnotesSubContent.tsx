@@ -1,5 +1,3 @@
-import { projects } from "@/assets/ProjectsData";
-
 export default function KualNotesSubContent() {
   return (
     <>
